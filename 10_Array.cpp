@@ -37,10 +37,23 @@ void InputArrayInt(int arr[], int count)
     }
 }
 
+int totalOfArray(int arr[], int count)
+{
+    int total=0;
+    for (int i=0; i<count; i++)
+        total = total+arr[i];
+    return total;    
+}
+
 int main()
 {
     int arrInt[5]={0};
     InputArrayInt(arrInt, 5);
+    printf("Total element: %d\n", totalOfArray(arrInt, 5));
+
+    // int arrInt2[20]={0};
+    // InputArrayInt(arrInt2, 20);
+    // printf("Total element: %d\n", totalOfArray(arrInt, 20));
     // testIntVariable();
     // testArrayInt();
 }
