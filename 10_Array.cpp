@@ -37,7 +37,7 @@ void InputArrayInt(int arr[], int count)
     }
 }
 
-int totalOfArray(int arr[], int count)
+int totalOfArray(int *arr, int count)
 {
     int total=0;
     for (int i=0; i<count; i++)
@@ -54,5 +54,4 @@ int main()
     int arrInt[nElement]={0};
     InputArrayInt(arrInt, nElement);
     printf("Total element: %d\n", totalOfArray(arrInt, nElement));
-
 }
