@@ -47,13 +47,12 @@ int totalOfArray(int arr[], int count)
 
 int main()
 {
-    int arrInt[5]={0};
-    InputArrayInt(arrInt, 5);
-    printf("Total element: %d\n", totalOfArray(arrInt, 5));
+    // user input jumlah element dari array
+    int nElement=0;
+    printf("Jumlah elemen: "); scanf("%d", &nElement);
 
-    // int arrInt2[20]={0};
-    // InputArrayInt(arrInt2, 20);
-    // printf("Total element: %d\n", totalOfArray(arrInt, 20));
-    // testIntVariable();
-    // testArrayInt();
+    int arrInt[nElement]={0};
+    InputArrayInt(arrInt, nElement);
+    printf("Total element: %d\n", totalOfArray(arrInt, nElement));
+
 }
